@@ -1,10 +1,10 @@
-# This is a basic workflow to help you get started with Actions
-
-name: My Starter Workflow
+name: My Starter Workflow2
 
 on:
   workflow_dispatch:
 
 jobs:
-  call-workflow-in-local-repo:
-    uses: ./.github/workflows/reusable-workflow.yml
+  call-workflow-using-main:
+    uses: abigaloes/github-action-reutilizacion/.github/workflows/reusable-workflow-2.yml@main
+  call-workflow-using-branch:
+    uses: abigaloes/github-action-reutilizacion/.github/workflows/reusable-workflow-2.yml@2025_01
